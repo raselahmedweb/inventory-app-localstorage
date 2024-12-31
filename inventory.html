@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekend Hotel | Inventory Starbucks</title>
+    <link rel="stylesheet" href="inventory.css" />
+    <link rel="icon" href="images/fav-icon.svg">
+    <script
+      src="https://kit.fontawesome.com/b96168f910.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="position: fixed; top: 10px; right: 20px">
+        
+        <h3 class="updates" >
+          No Update
+        </h3>
+        <div style="margin-top: 15px;">
+          <input class="dateInputValue" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; outline: none;" type="text" placeholder="DD/MM/YY">
+          <button  class="valueSubmit" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; outline: none; background: green; color: #fff;">Update</button>
+        </div>
+      </div>
+      
+      <section id="todo">
+        <div class="containerReg">
+          <div class="todo-box">
+            <h2 class="tableCaption">Inventory Coffee Shop</h2>
+            <table id="todoTableWrapper">
+              <span id="emptyId"></span>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Expiry Date</th>
+                  <th>left to expired</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="2">
+                    <input
+                      type="text"
+                      id="todoTitle"
+                      placeholder="Product Name"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      id="todoDesc"
+                      placeholder="Product Quantity"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      id="todoTitle2"
+                      placeholder="Expiry Date"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      id="todoDesc2"
+                      placeholder="left To Expired"
+                    />
+                  </td>
+                  <td>
+                    <center>
+                      <button id="saveBtn" class="saveBtn save">Save</button>
+                    </center>
+                  </td>
+                </tr>
+              </tfoot>
+              <tbody id="tblBody"></tbody>
+            </table>
+            <div id="edit-form">
+              <div>
+                <input type="text" value="" id="editTitle" />
+                <br />
+                <input type="text" value="" id="editTitle3" />
+                <br />
+                <input type="text" value="" id="editTitle2" />
+                <br />
+                <input type="text" value="" id="editTitle4" />
+                <br />
+                <input type="hidden" value="" id="arrayIndex" />
+                <br />
+                <button id="cancel">Cancel</button>
+                <button id="update">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          <span
+            >© 2024
+            <a
+              href="https://www.linkedin.com/in/rasel-ahmed-bijoy"
+              target="main"
+              ><b style="color: #ff5200">RASEL</b></a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script rel="javascript" src="inventory.js"></script>
+  </body>
+</html>
